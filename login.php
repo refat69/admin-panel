@@ -33,7 +33,11 @@ require_once('functions/function.php');
                       $Q = mysqli_query($con, $sel);
                       $data = mysqli_fetch_assoc($Q);
                       if ($data) {
-                        $_SESSION['user_id'] = $data['user_id'];
+                        $_SESSION['id'] = $data['user_id'];
+                        $_SESSION['name'] = $data['user_name'];
+                        $_SESSION['username'] = $data['user_username'];
+                        $_SESSION['role'] = $data['role_id'];
+                        $_SESSION['photo'] = $data['user_photo'];
                         header('Location: index.php');
                       } else {
                         echo "Wrong Username or Password";

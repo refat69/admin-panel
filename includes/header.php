@@ -19,13 +19,23 @@
         <div class="col-md-3 top_right_menu text-end">
           <div class="dropdown">
             <button class="btn dropdown-toggle top_right_btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="assets/images/avatar.png" class="img-fluid" alt="">
-              Saidul Islam Uzzal
+              <?php
+              if (!empty($_SESSION['photo'])) {
+              ?>
+                <img  src="assets/uploads/<?= $_SESSION['photo']; ?>" alt="photo" class="img-fluid">
+              <?php
+              } else {
+              ?>
+                <img src="assets/img/avatar.png" alt="photo" class="img-fluid">
+              <?php
+              }
+              ?>
+              <?= $_SESSION['name']; ?>
             </button>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#"><i class="fas fa-user-tie"></i> My Profile</a></li>
               <li><a class="dropdown-item" href="#"><i class="fas fa-cog"></i> Manage Account</a></li>
-              <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+              <li><a class="dropdown-item" href="logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
             </ul>
           </div>
         </div>
