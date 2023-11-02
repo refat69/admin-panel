@@ -29,6 +29,7 @@
                         <li><a href="all-parent.php"><i class="fas fa-file-alt"></i>Parent</a></li>
                         <li><a href="all-teacher.php"><i class="fas fa-chalkboard-teacher"></i>Teacher</a></li>
                         <li><a href="all-price.php"><i class="fas fa-object-group"></i>Price</a></li>
+                        <li><a href="all-gallery.php"><i class="fas fa-angle-double-right"></i>Gallery</a></li>
                         <li><a href="#"><i class="fas fa-comments"></i> Contact Message</a></li>
                         <li><a href="#"><i class="fas fa-globe"></i> Live Site</a></li>
                         <li><a href="logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
